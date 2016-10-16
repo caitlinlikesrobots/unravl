@@ -20,8 +20,7 @@ Rails.application.routes.draw do
 
 
 #this is the get for our about, features and tutorial page
-  get "/pages/:page" => "pages#show"
-  root "pages#show"
+  root "senteces#show"
  
       
 
