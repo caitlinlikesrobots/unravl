@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
 
 #this is the get for our about, features and tutorial page
-  root "senteces#show"
+  root "sentences#show"
  
       
 
