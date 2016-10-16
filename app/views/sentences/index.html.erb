@@ -16,9 +16,6 @@
       <tr>
         <td><%= sentence.content %></td>
         <td><%= sentence.chapter_id %></td>
-        <td><%= link_to 'Show', sentence %></td>
-        <td><%= link_to 'Edit', edit_sentence_path(sentence) %></td>
-        <td><%= link_to 'Destroy', sentence, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +23,4 @@
 
 <br>
 
-<%= link_to 'New Sentence', new_sentence_path %>
+
