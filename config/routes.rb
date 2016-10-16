@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :users, except: [:index] do 
     resources :books, only: [:index]  
     resources :chapters, only: [:index] 
-    resources :sentences, only: [:show]
+    resources :sentences, only: [:index]
   end
      
 
@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
 
 #this is the get for our about, features and tutorial page
-  root "sentences#show"
+  root "sentences#index"
  
       
 
