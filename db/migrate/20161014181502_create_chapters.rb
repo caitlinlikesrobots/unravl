@@ -4,7 +4,6 @@ class CreateChapters < ActiveRecord::Migration
       t.text :content
       t.string :title
       t.integer :book_id
-      t.integer :user_id
 
       t.timestamps null: false
     end
