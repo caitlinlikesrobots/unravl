@@ -28,10 +28,10 @@ class SentencesController < ApplicationController
 
     respond_to do |format|
       if @sentence.save
-        format.html { redirect_to @sentence, notice: 'Sentence was successfully created.' }
+        # format.html { redirect_to @sentence, notice: 'Sentence was successfully created.' }
         format.json { render :show, status: :created, location: @sentence }
       else
-        format.html { render :new }
+        # format.html { render :new }
         format.json { render json: @sentence.errors, status: :unprocessable_entity }
       end
     end
