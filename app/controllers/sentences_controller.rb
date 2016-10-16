@@ -10,6 +10,8 @@ class SentencesController < ApplicationController
   # GET /sentences/1
   # GET /sentences/1.json
   def show
+    @sentence = Sentence.find(1)
+    render json: @sentence
   end
 
   # GET /sentences/new
@@ -64,7 +66,7 @@ class SentencesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_sentence
-      @sentence = Sentence.find(params[:id])
+      @sentence = Sentence.find(1)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
