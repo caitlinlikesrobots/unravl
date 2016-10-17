@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
-  resources :users, except: [:index] do 
-    resources :books, only: [:index]  
-    resources :chapters, only: [:index] 
-    resources :sentences, only: [:index]
-    resources :rounds, only: [:create]
-  end
+    resources :users, only: [:index] 
+    resources :rounds, only: [:create]   
+    
+      
+    resources :books, only: [:index] do
+      resources :chapters, only: [:index] do
+        resources :sentences, only: [:index]
+      end
+    end
+    
+
      
 
   # The priority is based upon order of creation: first created -> highest priority.
