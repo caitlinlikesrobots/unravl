@@ -10,10 +10,13 @@
 
 Book.create!(title: "Dr. Dino Goes to the City", length: 76, author: "Dr. Philip Seymour Hoffman", synopsis: "It's a great book about a doctor dinosaur.", reading_level: 1)
 
-Chapter.create!(content: "This morning, Dr. Dino decided to go to the city. He was very excited, almost too excited.", title: "A Trip to the City", book_id: 1)
-Chapter.create!(content: "This morning, Dr. Dino decided to go to the city. He was very excited, almost too excited.", title: "The City was Crazy", book_id: 1)
+Chapter.create!(chapter_number: 1, title: "A Trip to the City", book_id: 1)
 
-Sentence.create!(content: "He was very excited, almost too excited.", chapter_id: 1)
-Sentence.create!(content: "He was going to the city for the very first time.", chapter_id: 1)
+Sentence.create(text: "He was excited, almost too excited.", chapter_id: 1)
 
 Round.create!(user_id: 4, chapter_id: 1)
+
+10.times {Book.create!(title: Faker::Hipster.word.capitalize, length: rand(50..120), author: Faker::Name.name, synopsis: Faker::Hipster.paragraph, reading_level: rand(1..10))}
+30.times {Chapter.create!(chapter_number: rand(1..5), title: Faker::Hipster.sentence, book_id: Book.all.sample)}
+
+50.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: Chapter.all.sample)}

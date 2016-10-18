@@ -27,11 +27,11 @@ ActiveRecord::Schema.define(version: 20161016165128) do
   end
 
   create_table "chapters", force: :cascade do |t|
-    t.text     "content"
+    t.integer  "chapter_number"
     t.string   "title"
     t.integer  "book_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "rounds", force: :cascade do |t|
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20161016165128) do
   end
 
   create_table "sentences", force: :cascade do |t|
-    t.string   "content"
+    t.string   "text"
     t.integer  "chapter_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
