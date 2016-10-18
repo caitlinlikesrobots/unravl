@@ -13,6 +13,9 @@ Book.create!(title: "Dr. Dino Goes to the City", length: 76, author: "Dr. Philip
 Chapter.create!(chapter_number: 1, title: "A Trip to the City", book_id: 1)
 
 Sentence.create(text: "He was excited, almost too excited.", chapter_id: 1)
+Sentence.create(text: "He took the train, and when he first saw the tall buildings through the windows, he felt intimidated.", chapter_id: 1)
+Sentence.create(text: "He walked down the city blocks, noticing all the people.", chapter_id: 1)
+Sentence.create(text: "On his way home, he was happy he'd gone to the city.", chapter_id: 1)
 
 Round.create!(user_id: 4, chapter_id: 1)
 
