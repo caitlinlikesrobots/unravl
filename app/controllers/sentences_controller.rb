@@ -5,11 +5,14 @@ class SentencesController < ApplicationController
   # GET /sentences.json
   def index
     @sentences = Sentence.all
+    render json: @sentences
   end
 
   # GET /sentences/1
   # GET /sentences/1.json
   def show
+    @sentence = Sentence.find(params[:id])
+    render json: @sentence
   end
 
   # GET /sentences/new
@@ -28,10 +31,10 @@ class SentencesController < ApplicationController
 
     respond_to do |format|
       if @sentence.save
-        format.html { redirect_to @sentence, notice: 'Sentence was successfully created.' }
+        # format.html { redirect_to @sentence, notice: 'Sentence was successfully created.' }
         format.json { render :show, status: :created, location: @sentence }
       else
-        format.html { render :new }
+        # format.html { render :new }
         format.json { render json: @sentence.errors, status: :unprocessable_entity }
       end
     end

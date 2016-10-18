@@ -3,4 +3,4 @@ rvm:
  - 2.2
 script:
 - bundle exec rake db:test:prepare
-- bundle exec rake spec
+- bundle exec rake rspec

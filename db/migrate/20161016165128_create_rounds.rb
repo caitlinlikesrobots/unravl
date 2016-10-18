@@ -3,7 +3,6 @@ class CreateRounds < ActiveRecord::Migration
     create_table :rounds do |t|
       t.integer :user_id
       t.integer :chapter_id
-      t.integer :sentence_id
 
       t.timestamps null: false
     end
