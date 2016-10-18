@@ -26,7 +26,7 @@ Rails.application.routes.draw do
 
 
 #this is the get for our about, features and tutorial page
-  root "sentences#index"
+  get '/demo' => "sentences#index"
  
       
 
