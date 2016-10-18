@@ -19,7 +19,32 @@ Sentence.create(text: "On his way home, he was happy he'd gone to the city.", ch
 
 Round.create!(user_id: 4, chapter_id: 1)
 
-10.times {Book.create!(title: Faker::Hipster.word.capitalize, length: rand(50..120), author: Faker::Name.name, synopsis: Faker::Hipster.paragraph, reading_level: rand(1..10))}
-30.times {Chapter.create!(chapter_number: rand(1..5), title: Faker::Hipster.sentence, book_id: Book.all.sample)}
+6.times {Book.create!(title: Faker::Hipster.word.capitalize, length: rand(50..120), author: Faker::Name.name, synopsis: Faker::Hipster.paragraph, reading_level: rand(1..10))}
 
-50.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: Chapter.all.sample)}
+3.times {Chapter.create!(chapter_number: rand(1..5), title: Faker::Hipster.sentence, book_id: 2)}
+3.times {Chapter.create!(chapter_number: rand(1..5), title: Faker::Hipster.sentence, book_id: 3)}
+3.times {Chapter.create!(chapter_number: rand(1..5), title: Faker::Hipster.sentence, book_id: 4)}
+3.times {Chapter.create!(chapter_number: rand(1..5), title: Faker::Hipster.sentence, book_id: 5)}
+3.times {Chapter.create!(chapter_number: rand(1..5), title: Faker::Hipster.sentence, book_id: 6)}
+3.times {Chapter.create!(chapter_number: rand(1..5), title: Faker::Hipster.sentence, book_id: 7)}
+
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 2)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 3)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 4)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 5)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 6)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 7)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 8)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 9)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 10)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 11)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 12)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 13)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 14)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 15)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 16)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 17)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 18)}
+4.times {Sentence.create!(text: Faker::Hipster.paragraph, chapter_id: 19)}
+
+
