@@ -53,10 +53,10 @@ Add additional notes about how to deploy this on a live system -->
 * [Rails](http://rubyonrails.org/) - Back-end
 * [Swift](https://swift.org/) - iOS native
 * [JavaScript](https://www.javascript.com/) - Front-end
-* [Matter.js](http://brm.io/matter-js/) - World engine
+* [D3.js](https://d3js.org) - JavaScript library for visualizing data with HTML, SVG, and CSS
 * [interact.js](http://interactjs.io/) - Touch-gesture events
-* [#other](#) - Description
-* [#other](#) - Description
+* [Matter.js](http://brm.io/matter-js/) - World engine
+
 
 ## Contributing
 
