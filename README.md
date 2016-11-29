@@ -1,6 +1,6 @@
 # UNRAVL
 
-Only 15% of Americans are literate.  We wanted to do something about it.
+15% of Americans are illiterate.  We wanted to do something about it.
 
 ## Getting Started
 
