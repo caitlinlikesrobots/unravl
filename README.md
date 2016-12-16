@@ -55,7 +55,6 @@ Add additional notes about how to deploy this on a live system -->
 * [JavaScript](https://www.javascript.com/) - Front-end
 * [D3.js](https://d3js.org) - JavaScript library for animating data
 * [interact.js](http://interactjs.io/) - Touch-gesture events
-* [Matter.js](http://brm.io/matter-js/) - World engine
 
 
 ## Contributing
